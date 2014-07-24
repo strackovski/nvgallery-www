@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="not">
+  <head>
+    <meta charset="utf-8">
+    <title>nv/Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- css -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/font-awesome.css" rel="stylesheet">
+    <link href="./css/nvgallery.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+
+    <!-- js -->
+    <script src="./js/vendor/require.js"></script>
+    <script type="text/javascript">
+      // Load common code that includes config,
+      // then load the app logic for this page.
+      require(['./js/common'], function (common) {
+          // ./js/common.js sets the baseUrl to be ./js/
+          // You can ask for 'app/main-about' here instead
+          // of './js/app/main-about'
+          require(['app/main-home']);
+      });
+    </script>
+
+    <!-- fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700|Source+Sans+Pro|Josefin+Sans:100,300,400,100italic,300italic,400italic' rel='stylesheet' type='text/css'>
+    <script src="//use.edgefonts.net/gruppo.js"></script>
+  </head>
+
+  <body>
+      <nav class="nav">
+          <ul>
+              <li class="active"><a class="btn-home" href="index.html">Home</a></li>
+              <li><a class="btn-dl" href="download.html">Download</a></li>
+              <li><a class="btn-docs" href="documentation.html">Docs</a></li>
+          </ul>
+      </nav>
+      <div class="home-page">
+          <div class="header">
+              <!--[if !IE]><!--><div class="back"></div><!--><![endif]-->
+
+              <h1 class="header-title"><span class="c-prefix">nv</span>Gallery</h1>
+              <p class="header-feature type size2">
+                  A gallery plug-in for jQuery
+              </p>
+              <!-- Landing page Gallery -->
+              <div class="main-first"></div>
+              <div class="start"><a class="type" href="/">Show me<br/><i class="fa fa-angle-down fa-2x"></i></a></div>
+          </div>
+
+          <div class="introduction">
+              <h2 class="type size3 text-center">Make galleries like a baws. With <span class="emphasis">nvGallery</span>.</h2>
+              <!-- Sample Gallery -->
+              <div class="ga-1"></div>
+
+              <h4 class="intro-subtitle type size2">
+                  <span class="emphasis">nvGallery</span> is a jQuery plugin that makes creating galleries easy
+              </h4>
+              <br>
+              <div class="description-wrapper">
+                  <div class="description text">
+                      <ul>
+                          <li><i class="fa fa-angle-right"></i> Easy to use</li>
+                          <li><i class="fa fa-angle-right"></i> Modern design</li>
+                          <li><i class="fa fa-angle-right"></i> Slideshow option</li>
+                      </ul>
+                      <ul>
+                          <li><i class="fa fa-angle-right"></i> Customizable</li>
+                          <li><i class="fa fa-angle-right"></i> Thumbnails preview</li>
+                          <li><i class="fa fa-angle-right"></i> With lightbox for full size preview</li>
+                      </ul>
+                  </div>
+                  <a href="download" class="btn-getstarted"><span>Get started</span> <i class="fa fa-angle-right fa-3x"></i></a>
+              </div>
+          </div>
+
+          <div class="page-footer">
+              <ul class="footer-nav">
+                  <li><a href="https://github.com/strackovski/nvgallery" target="_blank"><i class="fa fa-github"> </i> GitHub</a></li>
+                  <li><a href="mailto:info@strackovski.net"><i class="fa fa-envelope"> </i> Contact</a></li>
+                  <li><a href="http://www.strackovski.net/" target="_blank"><i class="fa fa-home"> </i> Homepage</a></li>
+              </ul>
+          </div>
+        </div>
+  </body>
+</html>

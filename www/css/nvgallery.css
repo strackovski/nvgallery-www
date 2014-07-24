@@ -1,0 +1,216 @@
+/*!
+ * nv/Gallery stylesheet
+ *
+ * Licensed under the MIT license
+ * <http://choosealicense.com/licenses/mit/>
+ *
+ * Copyright 2014 Vladimir Stračkovski <vlado@nv3.org>
+ */
+.nv-gallerious-container {
+    position: relative;
+    overflow: hidden;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    width: 100%}
+.nv-gallerious-main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+.nv-gallerious-bar {
+    position: absolute;
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+    overflow: hidden;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: .8em;
+    white-space: nowrap;
+}
+.nv-gallerious-bar>div {
+    display: inline-block;
+    margin-right: 15px;
+}
+.nv-gallerious-bar >div:last-child {
+    margin-right: 0;
+}
+.nv-gallerious-bar-text {
+    overflow: hidden;
+    position: absolute;
+    left: 77px;
+    right: 50px;
+}
+.nv-gallerious-text-description {
+    white-space: nowrap;
+    float: left;
+}
+.nv-gallerious-bar-right {
+    z-index: 3;
+    right: 0;
+    margin-right: 0;
+    padding-right: 10px;
+    white-space: nowrap;
+    position: absolute;
+    padding-left: 10px;
+}
+.nv-gallerious-bar-right>div {
+    display: inline-block;
+    white-space: nowrap;
+}
+.nv-gallerious-bar-right>div:first-child {
+    margin-right: 15px;
+}
+.nv-gallerious-bar i.fa {
+    cursor: pointer;
+    width: 11px;
+    text-align: center;
+}
+.nv-gallerious-nav {
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    width: 100%;
+    font-family: Consolas, monospace;
+    font-size: 20px;
+    color: #000;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.nv-gallerious-nav-left {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: #fff;
+    vertical-align: middle;
+    opacity: .8;
+    text-align: center;
+    z-index: 4;
+}
+.nv-gallerious-nav-right {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: #fff;
+    vertical-align: middle;
+    z-index: 4;
+    opacity: .8;
+    text-align: center;
+}
+.nv-gallerious-nav-left:hover, .nv-gallerious-nav-right:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+.nv-gallerious-image .nv-gallerious-img {
+    opacity: 1;
+    max-width: none;
+}
+.nv-gallerious-layer {
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    background: rgba(255, 255, 255, .8);
+    position: absolute;
+    display: none;
+    bottom: 0;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.nv-gallerious-thumb {
+    width: 12%;
+    vertical-align: top;
+    display: inline-block;
+    cursor: pointer;
+    background: #fff;
+    padding: .5%;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+.nv-gallerious-thumb img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+.nv-gallerious-lightbox-shadow {
+    position: fixed;
+    z-index: 900;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    background: #000;
+    opacity: .9;
+}
+.nv-gallerious-lightbox {
+    position: fixed;
+    background: #fff;
+    display: none;
+    text-align: center;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.nv-gallerious-lightbox img {
+    position: relative;
+    max-width: none;
+    max-height: none;
+}
+.nv-gallerious-next, .nv-gallerious-prev {
+    background: #fff;
+    color: #111;
+    position: absolute;
+    height: 40px;
+    width: 30px;
+    line-height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    font-family: Consolas, monospace;
+    top: 50%;
+    margin-top: -20px;
+    cursor: pointer;
+}
+.nv-gallerious-prev {
+    left: 10px;
+}
+.nv-gallerious-next {
+    right: 10px;
+}
+.nv-gallerious-lightbox-close {
+    position: absolute;
+    background: #fff;
+    color: #111;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+.nv-gallerious-lightbox-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 10px;
+    background: #fff;
+    color: #111;
+    padding: 10px;
+    text-align: left;
+    line-height: 11px;
+    font-size: 11px;
+    vertical-align: middle;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: Arial, sans-serif!important;
+}

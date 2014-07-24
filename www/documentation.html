@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" class="not">
+  <head>
+    <meta charset="utf-8">
+    <title>Download - nv/Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- css -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/font-awesome.css" rel="stylesheet">
+    <link href="./css/nvgallery.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+
+    <!-- css -->
+    <script src="./js/vendor/require.js"></script>
+    <script type="text/javascript">
+      require(['./js/common'], function (common) {
+          require(['app/main-home']);
+      });
+    </script>
+
+    <!-- fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,700|Source+Sans+Pro|Josefin+Sans:100,300,400,100italic,300italic,400italic' rel='stylesheet' type='text/css'>
+    <script src="//use.edgefonts.net/gruppo.js"></script>
+  </head>
+
+  <body>
+      <nav class="nav">
+          <ul>
+              <li class="active"><a class="btn-home" href="index.html">Home</a></li>
+              <li><a class="btn-dl" href="download.html">Download</a></li>
+              <li><a class="btn-docs" href="documentation.html">Docs</a></li>
+          </ul>
+      </nav>
+      <div class="docs-page">
+      <div class="docs-top-nav">
+          <ul class="documentation">
+              <li class="active-link"><a class="btn-quick-guide" href="#">Quick Guide</a></li> |
+              <li class="mrg"><a class="btn-long-guide" href="#">Detailed Guide</a></li>
+          </ul>
+          <br clear="all">
+      </div>
+
+
+      <div class="quick-guide">
+          <h2 class="docs-title type size2">Quick Guide</h2>
+
+          <p class="note">1. What you need</p>
+          <p>
+              <i class="fa fa-angle-right"></i> <a href="http://jquery.com/download/" target="_blank">jQuery <i class="fa fa-external-link"></i> </a>
+          </p>
+          <p>
+              <i class="fa fa-angle-right"></i> <a href="download.html">nvGallery files</a> (jquery.nvgallery.js, nvgallery.css)
+          </p>
+          <p>
+              <i class="fa fa-angle-right"></i> A collection of icons called <a href="http://fontawesome.io/" target="_blank">FontAwesome <i class="fa fa-external-link"></i></a> (included in the <a href="download.html">download</a>)
+          </p>
+
+          <p class="note">
+              2. Creating an array of images
+          </p>
+          <p>In your Javascript file, create an array of object literals with a defined <span class="code-style">path</span> property and an optional <span class="code-style">description</span> property.</p>
+                        <pre>var myPictures = [
+        {path:'images/rocks.png', description:'Just a picture.'},
+        {path:'images/paws.png', description:'Another photo I took.'}
+    ];</pre>
+
+          <p class="note">3. Make a div element</p>
+
+          <p>
+              Optionally you can set its width (height is calculated dynamically). Otherwise the gallery will take 100% of width.
+          </p>
+          <p>HTML:</p>
+          <pre>&#60div class="wrap"&#62&#60div&#62</pre>
+
+
+          <p>CSS:</p>
+                    <pre>
+    .wrap{
+        width:500px;
+    }</pre>
+          <div class="alert alert-success">
+              Width can also be defined on a <span class="code-style">div</span>'s parent element.
+          </div>
+
+
+
+          <p class="note">4. Call the plugin</p>
+          <p>Inside your <span class="code-style">document.ready()</span> event, call the plugin on the created <span class="code-style">div</span> element and pass the images array as an argument.
+                    <pre>
+    $('.wrap').nvgallery(myPictures);</pre>
+
+          <br>
+          <div class="ga-2"></div>
+
+      </div>
+      <!-- long guide -->
+      <div class="detailed-guide">
+      <div class="long-code">
+          <h2 class="docs-title type size2">Detailed Guide</h2>
+
+          <p class="note target-1">1. What you need</p>
+          <p>
+              <i class="fa fa-angle-right"></i> <a href="http://jquery.com/download/" target="_blank">jQuery <i class="fa fa-external-link"></i> </a>
+          </p>
+          <p>
+              <i class="fa fa-angle-right"></i> <a href="download.html">nvGallery files</a> (jquery.nvgallery.js, nvgallery.css)
+          </p>
+          <p>
+              <i class="fa fa-angle-right"></i> A collection of icons called <a href="http://fontawesome.io/" target="_blank">FontAwesome <i class="fa fa-external-link"></i></a> (included in the <a  class="download-link" href="download.html">download</a>)
+          </p>
+
+          <p>
+              Transfer the files to your project and reference them in the HTML document like so:
+          </p>
+            <pre>&#60!DOCTYPE html&#62
+    &#60html&#62
+        &#60head&#62
+            &#60script type="text/javascript" src="jquery-1.11.0.js"&#62&#60/script&#62
+            &#60script type="text/javascript" src="jquery.nvgallery.js"&#62&#60/script&#62
+            &#60link rel="stylesheet" href="nvgallery.css"&#62&#60/script&#62
+        &#60/head&#62
+        &#60body&#62
+        ...
+        &#60/body&#62
+    &#60/html&#62</pre>
+
+
+          <div class="alert alert-success">
+              Instead of downloading jQuery, you can also include a link of the file hosted online:
+              <br>
+              &#60script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"&#62&#60/script&#62
+          </div>
+
+          <p class="note target-2">
+              2. Creating an array of images
+          </p>
+          <p>
+              In your Javascript file, create an array of object literals with a defined <span class="code-style">path</span> property and an optional <span class="code-style">description</span> property.
+          </p>
+                        <pre>var myPictures = [
+        {path:'images/rocks.png', description:'Just a picture.'},
+        {path:'images/paws.png', description:'Another photo I took.'}
+    ];</pre>
+
+          <p class="note target-3">
+              3. Make a div element
+          </p>
+
+          <p>
+              Optionally you can set its width (height is calculated dynamically). Otherwise the gallery will take 100% of width.
+          </p>
+
+          <p>HTML:</p>
+          <pre>&#60div class="wrap"&#62&#60div&#62</pre>
+
+          <p>CSS:</p>
+                    <pre>
+    .wrap{
+        width:500px;
+    }</pre>
+          <div class="alert alert-success">
+              Width can also be defined on a <span class="code-style">div</span>'s parent element.
+          </div>
+          <div class="alert alert-success">nvGallery is responsive so you can also express the width in percents.</div>
+
+
+          <p class="note target-4">4. Call the plugin</p>
+          <p>Inside your <span class="code-style">document.ready()</span> event, call the plugin on the created <span class="code-style">div</span> element and pass the images array as an argument.
+                    <pre>
+    $('.wrap').nvgallery(myPictures);</pre>
+          <br>
+          <p>
+              With no options object passed, the defaults take effect, namely:
+          </p>
+          <p>
+              <i class="fa fa-angle-right"></i> height: '0.5625'
+          </p>
+          <p>
+              <i class="fa fa-angle-right"></i> arrows style: border radius of 10% in outer corners with white background
+          </p>
+          <p>
+              <i class="fa fa-angle-right"></i> container style: dark background with no border
+          </p>
+          <p>
+              <i class="fa fa-angle-right"></i> autoplay: false
+          </p>
+
+          <p class="note target-5">5. The result</p>
+          <div class="ga-3"></div>
+
+
+
+          <br>
+          <p class="note target-6">6. Options</p>
+          <p>
+              Options allow you to adjust the behavior and look of the plugin. If no options are provided, the
+              defaults will take effect.
+          </p>
+          <div class="popup">
+              <p class="type-declaration">
+                  type: number
+                  <br>
+                  default: 3
+                  <br>
+                  possible options: any number
+              </p>
+              <div class="usage-declaration">
+                  <span class="popup-title">Usage</span>
+                  <pre>$('ul').itemSlider({showItems:6});</pre>
+              </div>
+              <div class="details-declaration">
+                  <span class="popup-title">Details</span>
+                  <p>Sets the number of items to show in a row.</p>
+              </div>
+          </div>
+
+          <p>
+              Available options are:
+          </p>
+          <ul class="options-list">
+              <li>
+                  <p><i class="fa fa-angle-right"></i> <span class="code-style explanation"><span>height</span></span></p>
+              </li>
+              <li>
+                  <p><i class="fa fa-angle-right"></i> <span class="code-style explanation"><span>interval</span></span></p>
+
+              </li>
+              <li>
+                  <p><i class="fa fa-angle-right"></i> <span class="code-style explanation"><span>disableMenuBar</span></span></p>
+
+              </li>
+              <li>
+                  <p><i class="fa fa-angle-right"></i> <span class="code-style explanation"><span>hideMenuBar</span></span></p>
+
+              </li>
+              <li>
+                  <p><i class="fa fa-angle-right"></i> <span class="code-style explanation"><span>autoplay</span></span></p>
+
+              </li>
+              <li>
+                  <p><i class="fa fa-angle-right"></i> <span class="code-style explanation"><span>hideNav</span></span></p>
+
+              </li>
+              <li>
+                  <p><i class="fa fa-angle-right"></i> <span class="code-style explanation"><span>disableNav</span></span></p>
+
+              </li>
+              <li>
+                  <p><i class="fa fa-angle-right"></i> <span class="code-style explanation"><span>leftArrowCss</span></span></p>
+
+              </li>
+              <li>
+                  <p><i class="fa fa-angle-right"></i> <span class="code-style explanation"><span>rightArrowCss</span></span></p>
+
+              </li>
+              <li>
+                  <p><i class="fa fa-angle-right"></i> <span class="code-style explanation"><span>containerCss</span></span></p>
+
+              </li>
+              <li>
+                  <p><i class="fa fa-angle-right"></i> <span class="code-style explanation"><span>barCss</span></span></p>
+
+              </li>
+              <li>
+                  <p><i class="fa fa-angle-right"></i> <span class="code-style explanation"><span>fadeDuration</span></span></p>
+
+              </li>
+
+
+          </ul>
+
+          <br>
+          <p>An example of a gallery with width set to 400px, height: 1.2, autoplay enabled, a 2px light gray border, a white bottom bar and round navigation arrows.</p>
+          <div class="ga-4"></div>
+
+          <br>
+          <p>Call the plugin with options:</p>
+            <pre>$('div').nvgallery(
+        {barCss:{background:'#fff', color:'#000'},
+        autoplay:true,
+        containerCss:{border:'2px solid #999', background:'#fff'},
+        rightArrowCss:{borderRadius:'50%', right:'10px', background:'#111', color:'#fff'},
+        leftArrowCss: {borderRadius:'50%', left:'10px', background:'#111', color:'#fff'}
+    });</pre>
+
+      </div>
+
+      <!--[if !IE]><!-->
+      <div class="detailed-guide-nav">
+          <p class="nav-title">Navigation</p>
+          <ul>
+              <li><i class="fa fa-angle-right"></i> <a href="#">What you need</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Array of images</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Creating a container</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Call the plugin</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Result</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Options</a></li>
+              <li><i class="fa fa-angle-up"></i> <a class="back-to-top" href="#">Back to top</a></li>
+          </ul>
+      </div>
+      <!--><![endif]-->
+      </div>
+      </div>
+
+      <!--[if !IE]><!-->
+      <div class="page-footer fixed-footer">
+          <ul class="footer-nav">
+              <li><a href="https://github.com/strackovski/nvgallery" target="_blank"><i class="fa fa-github"> </i> GitHub</a></li>
+              <li><a href="mailto:info@strackovski.net"><i class="fa fa-envelope"> </i> Contact</a></li>
+              <li><a href="http://www.strackovski.net/" target="_blank"><i class="fa fa-home"> </i> Homepage</a></li>
+          </ul>
+      </div>
+      <!--><![endif]-->
+  </body>
+</html>
