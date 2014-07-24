@@ -50,9 +50,9 @@ $(window).load(function () {
 
     // Create an array of images for the gallery
     var myPics = [
-        {path: 'images/islands.JPG', description: 'Nice island.'},
-        {path: 'images/bee.JPG', description: 'Bee on a flower.'},
-        {path: 'images/hill.JPG', description: 'Golden hill.'}
+        {path: 'images/islands.jpg', description: 'Nice island.'},
+        {path: 'images/bee.jpg', description: 'Bee on a flower.'},
+        {path: 'images/hill.jpg', description: 'Golden hill.'}
     ];
 
     // Home page

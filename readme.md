@@ -8,4 +8,10 @@ Project for strackovski/nvgallery web page.
 - Bootstrap
 - jQuery
 - Grunt
-- nodejs
+- node
+
+## License
+
+Copyright 2014 Vladimir Stračkovski. For more information please see
+the license file.
+
