@@ -1,11 +1,22 @@
-/*
- * nv/Gallery javascript
- *
- * Licensed under the MIT license
- * <http://choosealicense.com/licenses/mit/>
- *
+/* ===================================================
+ * nv/Gallery JavaScript Library
+ * http://github.com/strackovski/nvgallery
+ * http://www.nv3.org/gallery
+ * ===================================================
  * Copyright 2014 Vladimir Stračkovski <vlado@nv3.org>
- */
+ *
+ * Licensed under the MIT License;
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://choosealicense.com/licenses/mit/
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ * ========================================================== */
 ;(function ($, window, document, undefined) {
     'use strict';
 
@@ -14,7 +25,6 @@
         base.el = el;
         base.$el = $(el);
         base.pics = pics;
-
 
         base.init = function () {
             base.ctrl = 0;
@@ -29,7 +39,6 @@
             base.options = $.extend({}, $.fn.nvgallery.defaults, options);
 
             //make basic DOM elements and cache them for later
-
             //lightbox, lightbox shadow
             base.$el.append('<div class="nv-gallerious-lightbox-shadow">');
             base.$el.append('<div class="nv-gallerious-lightbox"></div>');
@@ -61,7 +70,6 @@
                 '<img class="nv-gallerious-img" src="' + base.pics[base.ctrl].path + '" alt="' + base.pics[base.ctrl].description + '"></div>');
             base.$imageContainer = base.$main.find('.nv-gallerious-image');
             base.$image = base.$imageContainer.find('.nv-gallerious-img');
-
 
             base.components();
         };
@@ -104,7 +112,6 @@
 
         base.setup = function () {
             var margin, oldWidth;
-
             base.$image.load(function () {
                 base.$image.css({width: '100%'});
                 var imageHeight = base.$image.height(),
@@ -179,7 +186,6 @@
             }
 
             //prevent bar from hiding if thumbnails view is active
-
             if (base.options.disableMenuBar === false) {
                 if (base.options.hideMenuBar === true) {
                     base.$el.mouseenter(function () {
@@ -223,7 +229,6 @@
             });
 
             //animate image description on hover if text is longer than container
-
             base.$barText.mouseenter(function () {
                 clearInterval(base.scrollInterval);
                 var margin = 1;
@@ -249,7 +254,6 @@
         };
 
         base.css = function () {
-
             //container style
             base.$container.css({height: base.$container.width() * base.options.height, overflow: 'hidden'});
             base.$container.css(base.options.containerCss);
@@ -265,7 +269,6 @@
         };
 
         base.clicks = function () {
-
             //right nav handler
             base.$navRight.on('click', function () {
                 if (base.ctrl === base.$picLength - 1) {

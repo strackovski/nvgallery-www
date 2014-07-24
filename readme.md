@@ -1,5 +1,6 @@
-# Web site for nvGallery (strackovski/gallery)
+# nvgallery-www
 
+Project for strackovski/nvgallery web page.
 
 ## Made/built with
 

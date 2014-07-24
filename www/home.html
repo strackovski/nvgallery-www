@@ -16,12 +16,7 @@
     <!-- js -->
     <script src="./js/vendor/require.js"></script>
     <script type="text/javascript">
-      // Load common code that includes config,
-      // then load the app logic for this page.
       require(['./js/common'], function (common) {
-          // ./js/common.js sets the baseUrl to be ./js/
-          // You can ask for 'app/main-about' here instead
-          // of './js/app/main-about'
           require(['app/main-home']);
       });
     </script>

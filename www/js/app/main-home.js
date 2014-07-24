@@ -1,3 +1,7 @@
+/* ===================================================
+ * nv/Gallery-www Home Page
+ * http://github.com/strackovski/nvgallery-www
+ * =================================================== */
 define([
   'jquery',
   'app/models/homeModel',

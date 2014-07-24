@@ -1,3 +1,7 @@
+/* ===================================================
+ * nv/Gallery-www Download Page
+ * http://github.com/strackovski/nvgallery-www
+ * =================================================== */
 define([
   'jquery',
   'app/models/downloadModel',

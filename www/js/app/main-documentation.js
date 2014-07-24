@@ -1,3 +1,7 @@
+/* ===================================================
+ * nv/Gallery-www Documentation Page
+ * http://github.com/strackovski/nvgallery-www
+ * =================================================== */
 define([
   'jquery',
   'app/models/documentationModel',

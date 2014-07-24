@@ -1,8 +1,8 @@
-/*
+/* ===================================================
  * nv/Gallery-www javascript
- *
+ * http://github.com/strackovski/nvgallery-www
  * Copyright 2014 Vladimir Stračkovski <vlado@nv3.org>
- */
+ * =================================================== */
 
 /*jslint browser:true*/
 /*global $, jQuery*/

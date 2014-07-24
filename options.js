@@ -1,3 +1,7 @@
+/* ===================================================
+ * nv/Gallery-www project options
+ * http://github.com/strackovski/nvgallery-www
+ * =================================================== */
 module.exports = {
   appDir: 'www',
   baseUrl: 'js/',
@@ -17,10 +21,7 @@ module.exports = {
       ]
     },
 
-    // Now set up a build layer for each main layer, but exclude
-    // the common one. If you're excluding a module, the excludee
-    // must appear before the excluder in this file. Otherwise it will
-    // get confused.
+    // Build layers
     {
       name: 'app/main-home',
       exclude: ['common']
