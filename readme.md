@@ -1,8 +1,9 @@
-# nvgallery-www
+nvgallery-www
+====================
 
-Project for strackovski/nvgallery web page.
+Project for **[nvgallery](http://www.nv3.org/gallery)** web page.
 
-## Made/built with
+### Made/built with
 
 - RequireJS
 - Bootstrap
@@ -10,8 +11,7 @@ Project for strackovski/nvgallery web page.
 - Grunt
 - node
 
-## License
+### License
 
 Copyright 2014 Vladimir Stračkovski. For more information please see
 the license file.
-
