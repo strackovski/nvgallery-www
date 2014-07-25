@@ -11,12 +11,10 @@
 /*global console*/
 $(window).load(function () {
     //$('body,html').animate({scrollTop: 0}, {duration: 700});
-
     'use strict';
 
     var win_height = 0,
         galleryControl = 0;
-
 
     // Make the background change when navigating through the gallery
     $('body').on('click', '.main-first .nv-gallerious-nav-right', function () {
