@@ -23,7 +23,6 @@ define([
             DOMDoc.find('meta[name="author"]').attr('content', model.getAuthor().name);
 
             $('h1.header-title').html(model.getTitle());
-
             $('a.author-email').attr('href', 'mailto:' + model.getAuthor().email);
             $('a.author-page').attr('href', model.getAuthor().www);
             $('a.project-repo').attr('href', model.getProjectPage());

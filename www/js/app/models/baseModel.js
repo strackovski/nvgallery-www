@@ -3,10 +3,23 @@
  * http://github.com/strackovski/nvgallery-www
  *
  * Base page model
+ *
+ * Defines common page properties:
+ * - Author information
+ * - Global metadata keywords and description
+ * - Project version
+ * - Project repository URL
+ * - Page title and subtitle
  * =================================================== */
-define(function () {
+ define(function () {
     'use strict';
 
+     /**
+      * Base Page Model
+      *
+      * @param {String} title    Page title
+      * @param {String} subtitle Page subtitle
+      */
     function BaseModel(title, subtitle) {
         this.title = title;
         this.subtitle = subtitle;
