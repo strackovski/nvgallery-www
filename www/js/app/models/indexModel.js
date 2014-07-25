@@ -7,12 +7,6 @@
 define(['./baseModel'], function (BaseModel) {
     'use strict';
 
-    /*
-    BaseModel.prototype.introHeader = function () {
-
-    };
-    */
-
     var model1 = new BaseModel('nvGallery', 'A gallery plug-in for jQuery');
 
     return model1;
