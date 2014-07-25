@@ -4,7 +4,7 @@
 
 var opt = require('./options');
 
-module.exports = function(grunt) {
+module.exports = function (grunt) {
     grunt.initConfig({
         clean: {
             release: 'www-release'
@@ -15,12 +15,15 @@ module.exports = function(grunt) {
             }
         },
         cssmin: {
-            compile: {
+            combine: {
                 files: {
-                    'www-release/css/style.css': 'www-release/css/style.css',
-                    'www-release/css/font-awesome.css': 'www-release/css/font-awesome.css',
-                    'www-release/css/bootstrap.css': 'www-release/css/bootstrap.css',
-                    'www-release/css/nvgallery.css': 'www-release/css/jquery.nvgallery.css'
+                    'www-release/css/styles.min.css':
+                        [
+                            'www-release/css/bootstrap.css',
+                            'www-release/css/font-awesome.css',
+                            'www-release/css/jquery.nvgallery.css',
+                            'www-release/css/gallery-www.css'
+                        ]
                 }
             }
         }
