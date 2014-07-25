@@ -9,7 +9,7 @@
 /*jslint browser:true*/
 /*global $, jQuery*/
 /*global console*/
-$(window).load(function () {
+$(document).ready(function () {
     //$('body,html').animate({scrollTop: 0}, {duration: 700});
     'use strict';
 
