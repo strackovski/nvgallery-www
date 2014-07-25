@@ -11,6 +11,8 @@ define(function () {
         this.title = title;
         this.subtitle = subtitle;
         this.version = '0.0.3';
+        this.projectPage = 'https://github.com/strackovski/nvgallery';
+        this.author = {'email' : 'vlado@nv3.org', 'www' : 'http://www.nv3.org'};
     }
 
     BaseModel.prototype.getTitle = function () {
@@ -23,6 +25,10 @@ define(function () {
 
     BaseModel.prototype.getVersion = function () {
         return this.version;
+    };
+
+    BaseModel.prototype.getAuthor = function () {
+        return this.author;
     };
 
     return BaseModel;

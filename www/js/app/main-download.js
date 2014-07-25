@@ -18,5 +18,10 @@ define([
             $('h1.header-title').html(model.getTitle());
             $('p.header-feature').html(model.getSubtitle());
             $('p.version').html(model.getVersionString());
+
+            //$('a.authoremail').attr('href', model.getAuthor());
+            $('a.author-email').attr('href', 'mailto:' + model.getAuthor().email);
+            $('a.author-page').attr('href', model.getAuthor().www);
+            $('a.project-repo').attr('href', model.getAuthor().projectPage);
         });
     });
