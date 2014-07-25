@@ -13,7 +13,7 @@ requirejs.config({
         'jquery':       'vendor/jquery',
         'bootstrap':    'vendor/bootstrap',
         'nvgallery':    'vendor/jquery.nvgallery',
-        'main':         'vendor/main'
+        'main':         'gallery-www'
     },
     shim: {
         'bootstrap':    ['jquery'],
