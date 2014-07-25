@@ -10,7 +10,6 @@
 /*global $, jQuery*/
 /*global console*/
 $(document).ready(function () {
-    //$('body,html').animate({scrollTop: 0}, {duration: 700});
     'use strict';
 
     var win_height = 0,
