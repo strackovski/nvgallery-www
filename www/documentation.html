@@ -26,78 +26,73 @@
     <script src="//use.edgefonts.net/gruppo.js"></script>
   </head>
 
-  <body>
-      <nav class="nav">
-          <ul>
-              <li class="active"><a class="btn-home" href="index.html">Home</a></li>
-              <li><a class="btn-dl" href="download.html">Download</a></li>
-              <li><a class="btn-docs" href="documentation.html">Docs</a></li>
-          </ul>
-      </nav>
-      <div class="docs-page">
-      <div class="docs-top-nav">
-          <ul class="documentation">
-              <li class="active-link"><a class="btn-quick-guide" href="#">Quick Guide</a></li> |
-              <li class="mrg"><a class="btn-long-guide" href="#">Detailed Guide</a></li>
-          </ul>
-          <br clear="all">
+  <nav class="nav">
+      <ul>
+          <li><a class="btn-home" href="index.html">Home</a></li>
+          <li><a class="btn-dl" href="download.html">Download</a></li>
+          <li class="active"><a class="btn-docs" href="documentation.html">Docs</a></li>
+      </ul>
+  </nav>
+
+
+  <div class="docs-page">
+  <div class="docs-top-nav">
+      <ul class="documentation">
+          <li class="active-link"><a class="btn-quick-guide" href="#">Quick Guide</a></li> |
+          <li class="mrg"><a class="btn-long-guide" href="#">Detailed Guide</a></li>
+      </ul>
+      <br clear="all">
+  </div>
+
+
+  <div class="quick-guide">
+      <h2 class="docs-title type size2">Quick Guide</h2>
+
+      <p class="note">1. What you need</p>
+      <p>
+          <i class="fa fa-angle-right"></i> <a href="http://jquery.com/download/" target="_blank">jQuery <i class="fa fa-external-link"></i> </a>
+      </p>
+      <p>
+          <i class="fa fa-angle-right"></i> <a href="download.html">nvGallery files</a> (jquery.nvgallery.js, nvgallery.css)
+      </p>
+      <p>
+          <i class="fa fa-angle-right"></i> A collection of icons called <a href="http://fontawesome.io/" target="_blank">FontAwesome <i class="fa fa-external-link"></i></a> (included in the <a href="download.html">download</a>)
+      </p>
+
+      <p class="note">
+          2. Creating an array of images
+      </p>
+      <p>In your Javascript file, create an array of object literals with a defined <span class="code-style">path</span> property and an optional <span class="code-style">description</span> property.</p>
+        <pre>var myPictures = [
+    {path:'images/rocks.png', description:'Just a picture.'},
+    {path:'images/paws.png', description:'Another photo I took.'}
+];</pre>
+
+      <p class="note">3. Make a div element</p>
+
+      <p>
+          Optionally you can set its width (height is calculated dynamically). Otherwise the gallery will take 100% of width.
+      </p>
+      <p>HTML:</p>
+      <pre>&#60div class="wrap"&#62&#60div&#62</pre>
+
+
+      <p>CSS:</p>
+        <pre>.wrap{
+    width:500px;
+}</pre>
+      <div class="alert alert-success">
+          Width can also be defined on a <span class="code-style">div</span>'s parent element.
       </div>
+      <p class="note">4. Call the plugin</p>
+      <p>Inside your <span class="code-style">document.ready()</span> event, call the plugin on the created <span class="code-style">div</span> element and pass the images array as an argument.
+      <pre>$('.wrap').nvgallery(myPictures);</pre>
+      <br>
+      <div class="ga-2"></div>
 
-
-      <div class="quick-guide">
-          <h2 class="docs-title type size2">Quick Guide</h2>
-
-          <p class="note">1. What you need</p>
-          <p>
-              <i class="fa fa-angle-right"></i> <a href="http://jquery.com/download/" target="_blank">jQuery <i class="fa fa-external-link"></i> </a>
-          </p>
-          <p>
-              <i class="fa fa-angle-right"></i> <a href="download.html">nvGallery files</a> (jquery.nvgallery.js, nvgallery.css)
-          </p>
-          <p>
-              <i class="fa fa-angle-right"></i> A collection of icons called <a href="http://fontawesome.io/" target="_blank">FontAwesome <i class="fa fa-external-link"></i></a> (included in the <a href="download.html">download</a>)
-          </p>
-
-          <p class="note">
-              2. Creating an array of images
-          </p>
-          <p>In your Javascript file, create an array of object literals with a defined <span class="code-style">path</span> property and an optional <span class="code-style">description</span> property.</p>
-                        <pre>var myPictures = [
-        {path:'images/rocks.png', description:'Just a picture.'},
-        {path:'images/paws.png', description:'Another photo I took.'}
-    ];</pre>
-
-          <p class="note">3. Make a div element</p>
-
-          <p>
-              Optionally you can set its width (height is calculated dynamically). Otherwise the gallery will take 100% of width.
-          </p>
-          <p>HTML:</p>
-          <pre>&#60div class="wrap"&#62&#60div&#62</pre>
-
-
-          <p>CSS:</p>
-                    <pre>
-    .wrap{
-        width:500px;
-    }</pre>
-          <div class="alert alert-success">
-              Width can also be defined on a <span class="code-style">div</span>'s parent element.
-          </div>
-
-
-
-          <p class="note">4. Call the plugin</p>
-          <p>Inside your <span class="code-style">document.ready()</span> event, call the plugin on the created <span class="code-style">div</span> element and pass the images array as an argument.
-                    <pre>
-    $('.wrap').nvgallery(myPictures);</pre>
-
-          <br>
-          <div class="ga-2"></div>
-
-      </div>
-      <!-- long guide -->
-      <div class="detailed-guide">
+  </div>
+  <!-- long guide -->
+  <div class="detailed-guide">
       <div class="long-code">
           <h2 class="docs-title type size2">Detailed Guide</h2>
 
@@ -116,18 +111,16 @@
               Transfer the files to your project and reference them in the HTML document like so:
           </p>
             <pre>&#60!DOCTYPE html&#62
-    &#60html&#62
-        &#60head&#62
-            &#60script type="text/javascript" src="jquery-1.11.0.js"&#62&#60/script&#62
-            &#60script type="text/javascript" src="jquery.nvgallery.js"&#62&#60/script&#62
-            &#60link rel="stylesheet" href="nvgallery.css"&#62&#60/script&#62
-        &#60/head&#62
-        &#60body&#62
-        ...
-        &#60/body&#62
-    &#60/html&#62</pre>
-
-
+&#60html&#62
+    &#60head&#62
+        &#60script type="text/javascript" src="jquery-1.11.0.js"&#62&#60/script&#62
+        &#60script type="text/javascript" src="jquery.nvgallery.js"&#62&#60/script&#62
+        &#60link rel="stylesheet" href="nvgallery.css"&#62&#60/script&#62
+    &#60/head&#62
+    &#60body&#62
+    ...
+    &#60/body&#62
+&#60/html&#62</pre>
           <div class="alert alert-success">
               Instead of downloading jQuery, you can also include a link of the file hosted online:
               <br>
@@ -140,15 +133,13 @@
           <p>
               In your Javascript file, create an array of object literals with a defined <span class="code-style">path</span> property and an optional <span class="code-style">description</span> property.
           </p>
-                        <pre>var myPictures = [
-        {path:'images/rocks.png', description:'Just a picture.'},
-        {path:'images/paws.png', description:'Another photo I took.'}
-    ];</pre>
-
+            <pre>var myPictures = [
+    {path:'images/rocks.png', description:'Just a picture.'},
+    {path:'images/paws.png', description:'Another photo I took.'}
+];</pre>
           <p class="note target-3">
               3. Make a div element
           </p>
-
           <p>
               Optionally you can set its width (height is calculated dynamically). Otherwise the gallery will take 100% of width.
           </p>
@@ -157,20 +148,16 @@
           <pre>&#60div class="wrap"&#62&#60div&#62</pre>
 
           <p>CSS:</p>
-                    <pre>
-    .wrap{
-        width:500px;
-    }</pre>
+            <pre>.wrap{
+    width:500px;
+}</pre>
           <div class="alert alert-success">
               Width can also be defined on a <span class="code-style">div</span>'s parent element.
           </div>
           <div class="alert alert-success">nvGallery is responsive so you can also express the width in percents.</div>
-
-
           <p class="note target-4">4. Call the plugin</p>
           <p>Inside your <span class="code-style">document.ready()</span> event, call the plugin on the created <span class="code-style">div</span> element and pass the images array as an argument.
-                    <pre>
-    $('.wrap').nvgallery(myPictures);</pre>
+          <pre>$('.wrap').nvgallery(myPictures);</pre>
           <br>
           <p>
               With no options object passed, the defaults take effect, namely:
@@ -187,12 +174,8 @@
           <p>
               <i class="fa fa-angle-right"></i> autoplay: false
           </p>
-
           <p class="note target-5">5. The result</p>
           <div class="ga-3"></div>
-
-
-
           <br>
           <p class="note target-6">6. Options</p>
           <p>
@@ -226,50 +209,37 @@
               </li>
               <li>
                   <p><i class="fa fa-angle-right"></i> <span class="code-style explanation"><span>interval</span></span></p>
-
               </li>
               <li>
                   <p><i class="fa fa-angle-right"></i> <span class="code-style explanation"><span>disableMenuBar</span></span></p>
-
               </li>
               <li>
                   <p><i class="fa fa-angle-right"></i> <span class="code-style explanation"><span>hideMenuBar</span></span></p>
-
               </li>
               <li>
                   <p><i class="fa fa-angle-right"></i> <span class="code-style explanation"><span>autoplay</span></span></p>
-
               </li>
               <li>
                   <p><i class="fa fa-angle-right"></i> <span class="code-style explanation"><span>hideNav</span></span></p>
-
               </li>
               <li>
                   <p><i class="fa fa-angle-right"></i> <span class="code-style explanation"><span>disableNav</span></span></p>
-
               </li>
               <li>
                   <p><i class="fa fa-angle-right"></i> <span class="code-style explanation"><span>leftArrowCss</span></span></p>
-
               </li>
               <li>
                   <p><i class="fa fa-angle-right"></i> <span class="code-style explanation"><span>rightArrowCss</span></span></p>
-
               </li>
               <li>
                   <p><i class="fa fa-angle-right"></i> <span class="code-style explanation"><span>containerCss</span></span></p>
-
               </li>
               <li>
                   <p><i class="fa fa-angle-right"></i> <span class="code-style explanation"><span>barCss</span></span></p>
-
               </li>
               <li>
                   <p><i class="fa fa-angle-right"></i> <span class="code-style explanation"><span>fadeDuration</span></span></p>
-
               </li>
-
-
           </ul>
 
           <br>
@@ -279,13 +249,12 @@
           <br>
           <p>Call the plugin with options:</p>
             <pre>$('div').nvgallery(
-        {barCss:{background:'#fff', color:'#000'},
-        autoplay:true,
-        containerCss:{border:'2px solid #999', background:'#fff'},
-        rightArrowCss:{borderRadius:'50%', right:'10px', background:'#111', color:'#fff'},
-        leftArrowCss: {borderRadius:'50%', left:'10px', background:'#111', color:'#fff'}
-    });</pre>
-
+    {barCss:{background:'#fff', color:'#000'},
+    autoplay:true,
+    containerCss:{border:'2px solid #999', background:'#fff'},
+    rightArrowCss:{borderRadius:'50%', right:'10px', background:'#111', color:'#fff'},
+    leftArrowCss: {borderRadius:'50%', left:'10px', background:'#111', color:'#fff'}
+});</pre>
       </div>
 
       <!--[if !IE]><!-->
@@ -302,17 +271,17 @@
           </ul>
       </div>
       <!--><![endif]-->
-      </div>
-      </div>
+  </div>
+  </div>
 
-      <!--[if !IE]><!-->
-      <div class="page-footer fixed-footer">
-          <ul class="footer-nav">
-              <li><a href="https://github.com/strackovski/nvgallery" target="_blank"><i class="fa fa-github"> </i> GitHub</a></li>
-              <li><a href="mailto:info@strackovski.net"><i class="fa fa-envelope"> </i> Contact</a></li>
-              <li><a href="http://www.strackovski.net/" target="_blank"><i class="fa fa-home"> </i> Homepage</a></li>
-          </ul>
-      </div>
-      <!--><![endif]-->
+  <!--[if !IE]><!-->
+  <div class="page-footer fixed-footer">
+      <ul class="footer-nav">
+          <li><a href="https://github.com/strackovski/nvgallery" target="_blank"><i class="fa fa-github"> </i> GitHub</a></li>
+          <li><a href="mailto:info@strackovski.net"><i class="fa fa-envelope"> </i> Contact</a></li>
+          <li><a href="http://www.strackovski.net/" target="_blank"><i class="fa fa-home"> </i> Homepage</a></li>
+      </ul>
+  </div>
+  <!--><![endif]-->
   </body>
 </html>
