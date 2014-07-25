@@ -47,7 +47,6 @@ $(window).load(function () {
         });
     });
 
-
     // Create an array of images for the gallery
     var myPics = [
         {path: 'images/islands.jpg', description: 'Nice island.'},
@@ -234,5 +233,4 @@ $(window).load(function () {
             $('.popup').fadeOut(100);
         });
     }
-
 });
