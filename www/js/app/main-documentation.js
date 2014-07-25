@@ -17,5 +17,9 @@ define([
 
         $(function () {
             $('h1.header-title').html(model.getTitle());
+
+            $('a.author-email').attr('href', 'mailto:' + model.getAuthor().email);
+            $('a.author-page').attr('href', model.getAuthor().www);
+            $('a.project-repo').attr('href', model.getProjectPage());
         });
     });

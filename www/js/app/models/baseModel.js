@@ -31,5 +31,9 @@ define(function () {
         return this.author;
     };
 
+    BaseModel.prototype.getProjectPage = function () {
+        return this.projectPage;
+    };
+
     return BaseModel;
 });
