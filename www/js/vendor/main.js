@@ -2,6 +2,8 @@
  * nv/Gallery-www javascript
  * http://github.com/strackovski/nvgallery-www
  * Copyright 2014 Vladimir Stračkovski <vlado@nv3.org>
+ *
+ * Main Javascript UI, fires on document ready
  * =================================================== */
 
 /*jslint browser:true*/

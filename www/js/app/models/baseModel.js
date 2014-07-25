@@ -1,3 +1,9 @@
+/* ===================================================
+ * nv/Gallery-www Documentation Page
+ * http://github.com/strackovski/nvgallery-www
+ *
+ * Base page model
+ * =================================================== */
 define(function () {
     function BaseModel(title, subtitle) {
         this.title = title;
