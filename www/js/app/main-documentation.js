@@ -8,7 +8,7 @@ define([
     'jquery',
     'app/models/documentationModel',
     'bootstrap',
-    'nvslider',
+    'nvgallery',
     'main'
 ],
 

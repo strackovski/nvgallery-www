@@ -8,7 +8,7 @@ define([
     'jquery',
     'app/models/downloadModel',
     'bootstrap',
-    'nvslider',
+    'nvgallery',
     'main'
 ],
 

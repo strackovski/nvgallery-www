@@ -8,7 +8,7 @@ define([
     'jquery',
     'app/models/indexModel',
     'bootstrap',
-    'nvslider',
+    'nvgallery',
     'main'
 ],
 

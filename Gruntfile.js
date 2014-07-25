@@ -20,7 +20,7 @@ module.exports = function(grunt) {
                     'www-release/css/style.css': 'www-release/css/style.css',
                     'www-release/css/font-awesome.css': 'www-release/css/font-awesome.css',
                     'www-release/css/bootstrap.css': 'www-release/css/bootstrap.css',
-                    'www-release/css/nvgallery.css': 'www-release/css/nvgallery.css'
+                    'www-release/css/nvgallery.css': 'www-release/css/jquery.nvgallery.css'
                 }
             }
         }
