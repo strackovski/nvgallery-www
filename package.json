@@ -2,7 +2,7 @@
   "name": "nvgallery-www",
   "description": "Web site for nvGallery project.",
   "author": "Vladimir Stračkovski",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "devDependencies": {
     "grunt-contrib-cssmin":       "latest",
     "grunt-contrib-requirejs":    "latest",
