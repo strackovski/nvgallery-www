@@ -10,19 +10,23 @@ define(function () {
         this.subtitle = subtitle;
     }
 
-    BaseModel.prototype.getTitle = function() {
+    BaseModel.prototype.getTitle = function () {
         return this.title;
     };
 
-    BaseModel.prototype.getSubtitle = function() {
+    BaseModel.prototype.getSubtitle = function () {
         return this.subtitle;
     };
 
-    BaseModel.prototype.getContentData = function() {
+    BaseModel.prototype.getContentData = function () {
         return this.contentData;
     };
 
-    BaseModel.prototype.setContentData = function(content) {
+    BaseModel.prototype.getContentData = function () {
+        return this.contentData;
+    };
+
+    BaseModel.prototype.setContentData = function (content) {
         this.contentData = content;
     };
 

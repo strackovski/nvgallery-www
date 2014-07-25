@@ -12,7 +12,6 @@ module.exports = {
     modules: [
         {
             name: 'common',
-            // Common dependencies (only top level)
             include: [
                 'app/models/baseModel',
                 'jquery',
@@ -24,12 +23,10 @@ module.exports = {
             name: 'app/main-index',
             exclude: ['common']
         },
-
         {
             name: 'app/main-download',
             exclude: ['common']
         },
-
         {
             name: 'app/main-documentation',
             exclude: ['common']

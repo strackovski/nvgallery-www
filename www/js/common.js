@@ -2,8 +2,7 @@
  * nv/Gallery-www Common
  * http://github.com/strackovski/nvgallery-www
  *
- * This file maps project dependencies in 'name':'path'
- * format from baseUrl.
+ * This file configures the options for requireJS.
  *
  * The build will inline common dependencies
  * into this file.
