@@ -11,6 +11,6 @@ define(['./baseModel'], function (BaseModel) {
         return 'Version ' + this.version;
     };
 
-    var model1 = new BaseModel('Download nvGallery', 'version number');
+    var model1 = new BaseModel('Download', 'version number');
     return model1;
 });

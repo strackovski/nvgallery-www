@@ -12,7 +12,17 @@ define(function () {
         this.subtitle = subtitle;
         this.version = '0.0.3';
         this.projectPage = 'https://github.com/strackovski/nvgallery';
-        this.author = {'email' : 'vlado@nv3.org', 'www' : 'http://www.nv3.org'};
+
+        this.author = {
+            'name' : 'Vladimir Stračkovski',
+            'email' : 'vlado@nv3.org',
+            'www' : 'http://www.nv3.org'
+        };
+
+        this.metadata = {
+            'keywords' : 'image gallery plugin, jquery gallery, plugin, jquery, slideshow',
+            'description' : 'A simple to use, modern image gallery plugin for jQuery.'
+        };
     }
 
     BaseModel.prototype.getTitle = function () {
@@ -33,6 +43,10 @@ define(function () {
 
     BaseModel.prototype.getProjectPage = function () {
         return this.projectPage;
+    };
+
+    BaseModel.prototype.getMetadata = function () {
+        return this.metadata;
     };
 
     return BaseModel;
