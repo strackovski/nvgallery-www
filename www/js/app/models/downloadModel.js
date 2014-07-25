@@ -5,8 +5,12 @@
  * Download page model
  * =================================================== */
 define(['./baseModel'], function (BaseModel) {
+    'use strict';
+
+    BaseModel.prototype.getVersionString = function () {
+        return 'Version ' + this.version;
+    };
 
     var model1 = new BaseModel('Download nvGallery', 'version number');
-
     return model1;
 });

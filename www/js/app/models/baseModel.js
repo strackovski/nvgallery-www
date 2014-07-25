@@ -5,9 +5,12 @@
  * Base page model
  * =================================================== */
 define(function () {
+    'use strict';
+
     function BaseModel(title, subtitle) {
         this.title = title;
         this.subtitle = subtitle;
+        this.version = '0.0.3';
     }
 
     BaseModel.prototype.getTitle = function () {
@@ -18,16 +21,8 @@ define(function () {
         return this.subtitle;
     };
 
-    BaseModel.prototype.getContentData = function () {
-        return this.contentData;
-    };
-
-    BaseModel.prototype.getContentData = function () {
-        return this.contentData;
-    };
-
-    BaseModel.prototype.setContentData = function (content) {
-        this.contentData = content;
+    BaseModel.prototype.getVersion = function () {
+        return this.version;
     };
 
     return BaseModel;
