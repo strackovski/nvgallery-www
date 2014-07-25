@@ -28,5 +28,7 @@ define([
             $('a.author-email').attr('href', 'mailto:' + model.getAuthor().email);
             $('a.author-page').attr('href', model.getAuthor().www);
             $('a.project-repo').attr('href', model.getProjectPage());
+
+            $('a.btn-download-file').attr('href', model.getProjectPage() + '/archive/master.zip');
         });
     });

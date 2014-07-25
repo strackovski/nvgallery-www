@@ -10,7 +10,7 @@ define(function () {
     function BaseModel(title, subtitle) {
         this.title = title;
         this.subtitle = subtitle;
-        this.version = '0.0.3';
+        this.version = '1.0.0';
         this.projectPage = 'https://github.com/strackovski/nvgallery';
 
         this.author = {
