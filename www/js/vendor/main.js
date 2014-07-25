@@ -26,7 +26,7 @@ $(window).load(function () {
                 $('.back').css({backgroundImage: 'url(images/hill_b.jpg)'});
             } else if (galleryControl === 3) {
                 galleryControl = 0;
-                $('.back').css({backgroundImage: 'url(images/first_low.jpg)'});
+                $('.back').css({backgroundImage: 'url(images/islands_b.jpg)'});
             }
             $('.back').fadeIn(800);
         });
@@ -41,7 +41,7 @@ $(window).load(function () {
             } else if (galleryControl === 1) {
                 $('.back').css({backgroundImage: 'url(images/bee_b.jpg)'});
             } else if (galleryControl === 0) {
-                $('.back').css({backgroundImage: 'url(images/first_low.jpg)'});
+                $('.back').css({backgroundImage: 'url(images/islands_b.jpg)'});
             }
             $('.back').fadeIn(300);
         });
