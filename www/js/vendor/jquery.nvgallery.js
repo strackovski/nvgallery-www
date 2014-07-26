@@ -45,10 +45,7 @@
             // Extend default options with what user provided
             base.options = $.extend({}, $.fn.nvgallery.defaults, options);
 
-            /*
-                Make basic DOM elements and cache them for later
-             */
-
+            // Make basic DOM elements and cache them for later
             // Lightbox, Lightbox shadow
             base.$el.append('<div class="nv-gallerious-lightbox-shadow">');
             base.$el.append('<div class="nv-gallerious-lightbox"></div>');
