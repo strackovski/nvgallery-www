@@ -9,7 +9,7 @@ Project for **[nvgallery](http://www.nv3.org/gallery)** web page.
 - Bootstrap
 - jQuery
 - Grunt
-- node
+- node/npm
 
 ### License
 
